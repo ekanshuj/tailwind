@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/input.css">
+    <title>Netflix - Sign In</title>
+</head>
+
+<body class="bg-[url('./imgs/bg.jpg')] max-h-screen overflow-hidden">
+    <main class="absolute min-h-screen w-screen bg-gradient-to-t from-[rgba(0,0,0,.5)] to-[rgba(0,0,0,.5)]">
+        <header class="mb-4">
+            <nav>
+                <img class="w-48 ml-8 mt-6 "
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
+                    alt="Netflix">
+            </nav>
+        </header>
+        <div
+            class="main_div pt-4 pb-16 pr-4 w-[24%] mx-auto bg-gradient-to-t from-[rgba(0,0,0,.7)] to-[rgba(0,0,0,.7)]">
+            <div class="form-design div-top flex flex-col w-[72%] mx-auto my-10">
+                <h1 class="text-white font-bold text-[2rem] mb-3">Sign In</h1>
+                <input class="py-4 px-4 -mr-5 bg-[#333333] rounded-[0.2575rem] my-[0.5rem] outline-none" type="text"
+                    placeholder="Email or phone number">
+                <span id="error4Email" class="text-[#DC7602] text-[0.773rem] p-1 hidden">Please enter a valid email
+                    address
+                    or
+                    phone
+                    number.</span>
+                <input class="py-4 px-4 -mr-5 bg-[#333333] rounded-[0.2575rem] my-[0.5rem] outline-none" type="password"
+                    placeholder="Password">
+                <span id="error4Password" class="text-[#DC7602] text-[0.773rem] p-1 hidden">Your password must contain
+                    between 4 and
+                    60
+                    characters.</span>
+                <button type="submit" id="btn"
+                    class="bg-red-600 p-4 mt-5 mb-2 -mr-5 rounded-md font-bold text-white">Sign In</button>
+                <div class="span-div flex justify-between items-center">
+                    <span class="text-gray-300 text-[0.9rem]"><input type="checkbox" name="remember me" id="remember me"
+                            checked>
+                        Remember me</span>
+                    <span class="ml-[3.2rem] text-gray-300 text-[0.9rem]">Need help?</span>
+                </div>
+            </div>
+            <div class="div-bottom w-[72%] mx-auto mt-12 mb-20 relative">
+                <img class="w-6 my-2" src="/fb-logo.png" alt="fb"><span
+                    class="absolute top-0 left-8 text-sm text-gray-500 my-1"><a href="#">Login with Facebook</a></span>
+                <p class="text-[1.2rem] text-gray-500">New to Netflix?</p> <span
+                    class="absolute top-8 left-36 text-[1.2rem] text-white"><a href="#">Sign up now</a></span>
+                <p class="text-[0.9rem] mt-2 text-gray-400">This page is protected by Google reCAPTCHA to ensure you're
+                    not
+                    a bot.</p> <span class="text-blue-800"><a href="#">Learn more.</a></span>
+            </div>
+        </div>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
